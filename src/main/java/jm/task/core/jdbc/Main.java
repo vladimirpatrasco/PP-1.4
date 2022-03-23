@@ -14,13 +14,13 @@ public class Main {
     public static void main(String[] args) {
 
        UserServiceImpl us = new UserServiceImpl();
-       us.createUsersTable();
-       us.saveUser("Ivan", "Ivanov", (byte) 31);
+//       us.createUsersTable(); //работает с коммитом
+       us.saveUser("Ivan", "Ivanov", (byte) 31); //не работает
        us.saveUser("Ivan", "Popov", (byte) 32);
        us.saveUser("Sidor", "Sidorov", (byte) 33);
        us.saveUser("Petr", "Petrov", (byte) 34);
-       System.out.println(us.getAllUsers());
-       us.cleanUsersTable();
-       us.dropUsersTable();
+//       System.out.println(us.getAllUsers()); //работает с коммитом
+//       us.cleanUsersTable(); //работает с коммитом
+//       us.dropUsersTable(); //работает с коммитом
     }
 }

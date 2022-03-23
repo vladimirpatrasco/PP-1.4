@@ -14,16 +14,15 @@ public class Util {
         String userName = "root";
         String password = "123qwerty";
         String url = "jdbc:mysql://localhost:3306/database";
+
         Connection connection = null;
         try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, userName, password);
-        } catch (SQLException e) {
+            connection.setAutoCommit(false);
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
         return connection;
     }
-
-
-
-
 }
