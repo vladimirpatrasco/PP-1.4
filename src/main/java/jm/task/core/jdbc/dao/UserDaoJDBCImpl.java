@@ -8,9 +8,9 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoJDBCImpl implements UserDao {
+/*public class UserDaoJDBCImpl implements UserDao {
 
-    String insertUser = "INSERT INTO Users (name, lastName, age) VALUES (?,?,?)";
+*//*    String insertUser = "INSERT INTO Users (name, lastName, age) VALUES (?,?,?)";
     String deleteUser = "DELETE FROM Users WHERE id = ?";
     String getAllUsers = "SELECT * FROM Users";
     String clearTable = "Truncate table Users";
@@ -130,5 +130,5 @@ public class UserDaoJDBCImpl implements UserDao {
                 ex.printStackTrace();
             }
         }
-    }
-}
+    }*//*
+}*/
